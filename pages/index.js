@@ -2,7 +2,7 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <div className="container">
+    <div>
       <Head>
         <title>Have a Coffee</title>
         <link rel="icon" href="/favico.png" />
@@ -24,11 +24,11 @@ export default function Home() {
             <button>Quero Café</button>
           </div>
 
-          <img src="/cup.jpg" alt="coffee cup" className="cup" />
+          <img src="/cup.jpg" alt="" className="cup" />
         </div>
 
         <div className="whyCoffee">
-          <img src="/explicativo1.jpg" alt="coffee cup" className="" />
+          <img src="/explicativo1.jpg" alt="" />
           <div>
             <h1>Porque o Have a Coffee?</h1>
             <p>
@@ -54,7 +54,6 @@ export default function Home() {
                 src="/favico.png"
                 alt="coffee cup"
                 style={{ backgroundColor: "white" }}
-                className=""
               />
               <h2>Escolha seu perfil de torra</h2>
               <p>
@@ -64,7 +63,7 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <img src="/iloop.png" alt="coffee cup" className="" />
+              <img src="/iloop.png" alt="" />
               <h2>Intenso ou Equilibrado?</h2>
               <p>
                 Do sabor delicado ao café mais encorpado com aromas intesnsos.
@@ -72,7 +71,7 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <img src="/cart.png" alt="coffee cup" className="" />
+              <img src="/cart.png" alt="" />
               <h2>Escolha a Quantidade</h2>
               <p>
                 Agora é só escolher a quantidade que você precisa. Seu café vai
@@ -85,17 +84,17 @@ export default function Home() {
           <h1>Conheça os Melhores</h1>
           <div className="productBox">
             <div>
-              <img src="/1Prod.jpg" alt="coffee cup" className="" />
+              <img src="/1Prod.jpg" alt="" />
               <h2>Gente Boa</h2>
               <button>Eu Quero</button>
             </div>
             <div>
-              <img src="/2Prod.jpg" alt="coffee cup" className="" />
+              <img src="/2Prod.jpg" alt="" />
               <h2>Coisa Séria</h2>
               <button>Eu Quero</button>
             </div>
-            <div>
-              <img src="/3Prod.jpg" alt="coffee cup" className="" />
+            <div className="last">
+              <img src="/3Prod.jpg" alt="" />
               <h2>Porradão</h2>
               <button>Eu Quero</button>
             </div>
@@ -103,9 +102,10 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="">
+      <footer>
         <h1>Apaixonados Por Café</h1>
-        <img src="/footer.jpg" alt="coffee cup" className="" />
+        <img src="/footer.jpg" alt="" className="desktop" />
+        <img src="/mobileFooter.png" alt="" className="mobile" />
       </footer>
     </div>
   );

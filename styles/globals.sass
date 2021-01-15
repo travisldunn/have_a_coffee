@@ -14,7 +14,6 @@ html,
 body 
   padding: 0
   margin: 0
-  marging-bottom: -10px
   backround-color: #F5F5E5
   color:#48321D
   font-family: cafeNormal
@@ -25,6 +24,9 @@ a
 
 * 
   box-sizing: border-box
+
+.mobile
+  display: none
 
 button
   background-color:#B88C5D
@@ -135,5 +137,109 @@ footer
     display: block
 
 
+@media (max-width: 600px) 
+
+  .mobile
+    display: block
+  .desktop
+    display: none  
+  button
+    width: 10.25rem
+    height: 2.875rem
+  .hero 
+    text-align: center
+    margin-bottom: 120px
+    .leftBox
+      width: 100%
+      padding: 10px
+    .logo
+      width: 65%
+      margin-bottom: 40px
+      margin-top: 40px
+
+    h1
+      font-size: 1.5rem
+    p
+      font-size: 1.125rem
+      margin-bottom: 55px
+    .cup 
+      display: none
+
+
+  .whyCoffee
+    display: block
+    margin-bottom: 40px
+    h1
+      margin-bottom: 40px
+      font-size: 32px
+    img
+      width: 100%
+    div
+      text-align: center
+      padding: 10px
+    p
+      font-size: 1.125rem
+      padding: 0 20px
+      padding-bottom: 20px
+
+  .comoFun 
+    padding: 0 20px
+    img
+      width: 60px
+      background-color: #B88C5D
+      margin: auto
+    h1
+      margin-bottom: 40px
+      font-size: 32px
+      text-align: center
+    .funBox
+      display: block
+      
+      div
+        padding: 0
+        width: 100%
+        text-align: center
+        margin-bottom: 100px
+      
+      h2
+        margin-bottom: 20px
+      p
+        font-size: 1.125rem
+       
+
+  .products 
+    text-align: center
+    padding: 0
+    h1
+      margin-bottom: 40px
+      font-size: 32px
+      text-align: center
+    img
+      width: 100%
+    .productBox
+      text-align: center
+      display: block
+      div
+        padding: 0
+        width: 100%
+        margin-bottom: 101px
+      h2
+        margin-bottom: 20px
+        margin-top: 0
+      p
+        font-size: 1.125rem
+      .last
+        margin-bottom: 0
+
+  footer
+    text-align: center
+    position: relative
+    h1
+      top: 150px
+      font-size: 32px
+    img
+      width: 100%
+
   
+
 
