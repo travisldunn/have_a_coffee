@@ -1,65 +1,112 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="container">
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Have a Coffee</title>
+        <link rel="icon" href="/favico.png" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <main className="main">
+        <div className="hero">
+          <div className="leftBox">
+            <img src="/hacLogo.png" alt="Have a Coffee Logo" className="logo" />
+            <h1 className="headline">
+              Direto dos melhores produtores
+              <br />
+              Escolha seu café favorito
+              <br />
+              Do jeito que você precisa
+            </h1>
+            <p>Transparência e rapidez de ponta a ponta.</p>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+            <button>Quero Café</button>
+          </div>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          <img src="/cup.jpg" alt="coffee cup" className="cup" />
+        </div>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
+        <div className="whyCoffee">
+          <img src="/explicativo1.jpg" alt="coffee cup" className="" />
+          <div>
+            <h1>Porque o Have a Coffee?</h1>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              Por trás de cada xícara de café, existe um mundo de transformações
+              e sensações.
             </p>
-          </a>
+            <p>
+              Do coração de quem produz com consciência. Da raiz de um lavoura
+              saudável. Passando pela transformação dos grãos por torras frescas
+              e em pequenas quantidades Até ser entregue a você com comodidade e
+              rapidez.
+            </p>
+            <p>Queremos levar o melhor do café até você.</p>
+            <p>Mas do seu jeito.</p>
+            <p>Transcenda as barreiras do café com a gente.</p>
+          </div>
+        </div>
+        <div className="comoFun">
+          <h1>Como Funciona?</h1>
+          <div className="funBox">
+            <div>
+              <img
+                src="/favico.png"
+                alt="coffee cup"
+                style={{ backgroundColor: "white" }}
+                className=""
+              />
+              <h2>Escolha seu perfil de torra</h2>
+              <p>
+                Claro, médio ou escuro? As torras mais claras tem sabor cítrico
+                ou frutado, as médias são mais amendoados e as mais escuras tem
+                sabor mais amargo.
+              </p>
+            </div>
+            <div>
+              <img src="/iloop.png" alt="coffee cup" className="" />
+              <h2>Intenso ou Equilibrado?</h2>
+              <p>
+                Do sabor delicado ao café mais encorpado com aromas intesnsos.
+                Nossos microlotes trazem novas sensações à todo tipo de paladar.
+              </p>
+            </div>
+            <div>
+              <img src="/cart.png" alt="coffee cup" className="" />
+              <h2>Escolha a Quantidade</h2>
+              <p>
+                Agora é só escolher a quantidade que você precisa. Seu café vai
+                chegar fresco e com rapidez
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="products">
+          <h1>Conheça os Melhores</h1>
+          <div className="productBox">
+            <div>
+              <img src="/1Prod.jpg" alt="coffee cup" className="" />
+              <h2>Gente Boa</h2>
+              <button>Eu Quero</button>
+            </div>
+            <div>
+              <img src="/2Prod.jpg" alt="coffee cup" className="" />
+              <h2>Coisa Séria</h2>
+              <button>Eu Quero</button>
+            </div>
+            <div>
+              <img src="/3Prod.jpg" alt="coffee cup" className="" />
+              <h2>Porradão</h2>
+              <button>Eu Quero</button>
+            </div>
+          </div>
         </div>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+      <footer className="">
+        <h1>Apaixonados Por Café</h1>
+        <img src="/footer.jpg" alt="coffee cup" className="" />
       </footer>
     </div>
-  )
+  );
 }
